@@ -1,0 +1,187 @@
+/* General App Styles */
+.app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f4f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task Input Section */
+  .task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .task-input input,
+  .task-input select,
+  .task-input button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .task-input input:focus,
+  .task-input select:focus,
+  .task-input button:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .task-input input,
+  .task-input select {
+    width: 100%;
+  }
+  
+  .task-input button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .task-input button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    height: 10px;
+    margin: 20px 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-list li {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .task-list li:hover {
+    background-color: #f4f7fa;
+    transform: scale(1.02);
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Points and Badges Section */
+  .points-badges {
+    margin-top: 30px;
+  }
+  
+  .points-badges p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .badges {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .badge {
+    background-color: #ff9800;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  .badge.pro {
+    background-color: #2196f3;
+  }
+  
+  .badge.expert {
+    background-color: #9c27b0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .app {
+      padding: 15px;
+    }
+  
+    .task-input {
+      gap: 10px;
+    }
+  
+    .task-input input,
+    .task-input select,
+    .task-input button {
+      font-size: 14px;
+    }
+  
+    .task-list li {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .progress-bar {
+      height: 8px;
+    }
+  
+    .points-badges p {
+      font-size: 16px;
+    }
+  
+    .badge {
+      font-size: 12px;
+    }
+  }
+  
+  /* Task Category and Due Date Styling */
+  .task-category,
+  .task-due-date {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  /* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #0056b3;
+  }
